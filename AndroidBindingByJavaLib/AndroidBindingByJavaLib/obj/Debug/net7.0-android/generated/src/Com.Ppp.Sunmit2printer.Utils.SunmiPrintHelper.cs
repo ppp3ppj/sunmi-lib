@@ -904,6 +904,43 @@ namespace Com.Ppp.Sunmit2printer.Utils {
 			}
 		}
 
+		static Delegate? cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F;
+#pragma warning disable 0169
+		static Delegate GetPrintTextWithFont_Ljava_lang_String_Ljava_lang_String_FHandler ()
+		{
+			if (cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F == null)
+				cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLLF_V) n_PrintTextWithFont_Ljava_lang_String_Ljava_lang_String_F);
+			return cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F;
+		}
+
+		static void n_PrintTextWithFont_Ljava_lang_String_Ljava_lang_String_F (IntPtr jnienv, IntPtr native__this, IntPtr native_text, IntPtr native_typeface, float fontSize)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			var text = JNIEnv.GetString (native_text, JniHandleOwnership.DoNotTransfer);
+			var typeface = JNIEnv.GetString (native_typeface, JniHandleOwnership.DoNotTransfer);
+			__this.PrintTextWithFont (text, typeface, fontSize);
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='printTextWithFont' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='float']]"
+		[Register ("printTextWithFont", "(Ljava/lang/String;Ljava/lang/String;F)V", "GetPrintTextWithFont_Ljava_lang_String_Ljava_lang_String_FHandler")]
+		public virtual unsafe void PrintTextWithFont (string? text, string? typeface, float fontSize)
+		{
+			const string __id = "printTextWithFont.(Ljava/lang/String;Ljava/lang/String;F)V";
+			IntPtr native_text = JNIEnv.NewString ((string?)text);
+			IntPtr native_typeface = JNIEnv.NewString ((string?)typeface);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
+				__args [0] = new JniArgumentValue (native_text);
+				__args [1] = new JniArgumentValue (native_typeface);
+				__args [2] = new JniArgumentValue (fontSize);
+				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
+			} finally {
+				JNIEnv.DeleteLocalRef (native_text);
+				JNIEnv.DeleteLocalRef (native_typeface);
+			}
+		}
+
 		static Delegate? cb_sendPicToLcd_Landroid_graphics_Bitmap_;
 #pragma warning disable 0169
 		static Delegate GetSendPicToLcd_Landroid_graphics_Bitmap_Handler ()
@@ -1051,6 +1088,35 @@ namespace Com.Ppp.Sunmit2printer.Utils {
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
 				__args [0] = new JniArgumentValue (align);
+				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
+			} finally {
+			}
+		}
+
+		static Delegate? cb_setFontSize_F;
+#pragma warning disable 0169
+		static Delegate GetSetFontSize_FHandler ()
+		{
+			if (cb_setFontSize_F == null)
+				cb_setFontSize_F = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPF_V) n_SetFontSize_F);
+			return cb_setFontSize_F;
+		}
+
+		static void n_SetFontSize_F (IntPtr jnienv, IntPtr native__this, float fontSize)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			__this.SetFontSize (fontSize);
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='setFontSize' and count(parameter)=1 and parameter[1][@type='float']]"
+		[Register ("setFontSize", "(F)V", "GetSetFontSize_FHandler")]
+		public virtual unsafe void SetFontSize (float fontSize)
+		{
+			const string __id = "setFontSize.(F)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
+				__args [0] = new JniArgumentValue (fontSize);
 				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
 			} finally {
 			}

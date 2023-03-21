@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ZtjGAzTr13QTqBFjQ0L3F1QxDutjz52NYPoqlb3oPqq+VWFAJQ4TBJbkMnHcJGfGYPyRa0MSyj5Z+J2uC97KQ==",
+  "dgSpecHash": "1x8+moMSxt/wvAdfM9rGbX40Y0Lrp/I2SX5kWz9kYcfuuRbrTuQjSl8EazW0Y258vRa6enFOys5JWgwpCiMihA==",
   "success": true,
-  "projectFilePath": "C:\\work\\repos_github_me\\maui_sunmi_lib_test\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
+  "projectFilePath": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

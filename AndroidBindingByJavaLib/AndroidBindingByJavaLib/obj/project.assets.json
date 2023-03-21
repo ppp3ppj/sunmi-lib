@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\repos_github_me\\maui_sunmi_lib_test\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
+      "projectUniqueName": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
       "projectName": "AndroidBindingByJavaLib",
-      "projectPath": "C:\\work\\repos_github_me\\maui_sunmi_lib_test\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
+      "projectPath": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
       "packagesPath": "C:\\Users\\AthiwatKhamnon\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\repos_github_me\\maui_sunmi_lib_test\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\obj\\",
+      "outputPath": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
