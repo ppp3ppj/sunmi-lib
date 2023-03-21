@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using Android.Runtime;
+using Java.Interop;
+
+namespace Com.Google.Zxing.Qrcode.Detector {
+
+	// Metadata.xml XPath class reference: path="/api/package[@name='com.google.zxing.qrcode.detector']/class[@name='FinderPattern']"
+	[global::Android.Runtime.Register ("com/google/zxing/qrcode/detector/FinderPattern", DoNotGenerateAcw=true)]
+	public sealed partial class FinderPattern : global::Com.Google.Zxing.ResultPoint {
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/google/zxing/qrcode/detector/FinderPattern", typeof (FinderPattern));
+
+		internal static new IntPtr class_ref {
+			get { return _members.JniPeerType.PeerReference.Handle; }
+		}
+
+		[global::System.Diagnostics.DebuggerBrowsable (global::System.Diagnostics.DebuggerBrowsableState.Never)]
+		[global::System.ComponentModel.EditorBrowsable (global::System.ComponentModel.EditorBrowsableState.Never)]
+		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
+			get { return _members; }
+		}
+
+		[global::System.Diagnostics.DebuggerBrowsable (global::System.Diagnostics.DebuggerBrowsableState.Never)]
+		[global::System.ComponentModel.EditorBrowsable (global::System.ComponentModel.EditorBrowsableState.Never)]
+		protected override IntPtr ThresholdClass {
+			get { return _members.JniPeerType.PeerReference.Handle; }
+		}
+
+		[global::System.Diagnostics.DebuggerBrowsable (global::System.Diagnostics.DebuggerBrowsableState.Never)]
+		[global::System.ComponentModel.EditorBrowsable (global::System.ComponentModel.EditorBrowsableState.Never)]
+		protected override global::System.Type ThresholdType {
+			get { return _members.ManagedPeerType; }
+		}
+
+		internal FinderPattern (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer)
+		{
+		}
+
+		public unsafe float EstimatedModuleSize {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.google.zxing.qrcode.detector']/class[@name='FinderPattern']/method[@name='getEstimatedModuleSize' and count(parameter)=0]"
+			[Register ("getEstimatedModuleSize", "()F", "")]
+			get {
+				const string __id = "getEstimatedModuleSize.()F";
+				try {
+					var __rm = _members.InstanceMethods.InvokeAbstractSingleMethod (__id, this, null);
+					return __rm;
+				} finally {
+				}
+			}
+		}
+
+	}
+}

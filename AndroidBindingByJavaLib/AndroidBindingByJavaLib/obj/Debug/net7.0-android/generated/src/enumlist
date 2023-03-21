@@ -1,0 +1,10 @@
+com.google.zxing.BarcodeFormat:Com.Google.Zxing:BarcodeFormat
+com.google.zxing.client.result.ParsedResultType:Com.Google.Zxing.Client.Result:ParsedResultType
+com.google.zxing.common.CharacterSetECI:Com.Google.Zxing.Common:CharacterSetECI
+com.google.zxing.datamatrix.encoder.SymbolShapeHint:Com.Google.Zxing.Datamatrix.Encoder:SymbolShapeHint
+com.google.zxing.DecodeHintType:Com.Google.Zxing:DecodeHintType
+com.google.zxing.EncodeHintType:Com.Google.Zxing:EncodeHintType
+com.google.zxing.pdf417.encoder.Compaction:Com.Google.Zxing.Pdf417.Encoder:Compaction
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel:Com.Google.Zxing.Qrcode.Decoder:ErrorCorrectionLevel
+com.google.zxing.qrcode.decoder.Mode:Com.Google.Zxing.Qrcode.Decoder:Mode
+com.google.zxing.ResultMetadataType:Com.Google.Zxing:ResultMetadataType

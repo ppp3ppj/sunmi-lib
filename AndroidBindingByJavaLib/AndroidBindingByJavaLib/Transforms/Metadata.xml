@@ -1,0 +1,31 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='AddressBookAUResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='AddressBookDoCoMoResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='BizcardResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='BookmarkDoCoMoResultParser']"/>
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='EmailAddressResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='EmailDoCoMoResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='ExpandedProductResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='GeoResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='ProductResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='ISBNResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='SMSMMSResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='SMTPResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='TelResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='URIResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='VCardResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='VEventResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='VINResultParser']" />
+  <remove-node path="/api/package[@name='com.google.zxing.oned.rss.expanded.decoders']/class[@name='AbstractExpandedDecoder']/method[@name='getGeneralDecoder' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='SMSTOMMSTOResultParser']"/>
+  <remove-node  path="/api/package[@name='com.google.zxing.client.result']/class[@name='URLTOResultParser']"/>
+	<remove-node  path="/api/package[@name='com.google.zxing.client.result']/class[@name='WifiResultParser']"/>
+</metadata>
