@@ -353,6 +353,30 @@ public class SunmiPrintHelper {
 
     }
 
+    public void printTextWithFont(String text, String typeface, float fontSize) {
+        if(sunmiPrinterService == null){
+            //TODO Service disconnection processing
+            return;
+        }
+        try {
+            sunmiPrinterService.printTextWithFont(text, typeface, fontSize, null);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setFontSize(float fontSize) {
+        if(sunmiPrinterService == null){
+            //TODO Service disconnection processing
+            return;
+        }
+        try {
+            sunmiPrinterService.setFontSize(fontSize, null);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * print Bar Code
      */
