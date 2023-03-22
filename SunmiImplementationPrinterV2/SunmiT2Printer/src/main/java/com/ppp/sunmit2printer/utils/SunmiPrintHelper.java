@@ -402,6 +402,24 @@ public class SunmiPrintHelper {
     }
 
     /**
+     *  Print a row of a table with font size custom *bug
+     */
+    public void printTableCustomFontSize(String[] txts, int[] width, int[] align, float fontSize) {
+        if(sunmiPrinterService == null){
+            //TODO Service disconnection processing
+            return;
+        }
+
+        try {
+            // set font size
+            sunmiPrinterService.setFontSize(fontSize, null);
+            sunmiPrinterService.printColumnsString(txts, width, align, null);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
      *  Print pictures and text in the specified orde
      *  After the picture is printed,
      *  the line feed output needs to be called,
