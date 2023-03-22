@@ -42,7 +42,6 @@ delegate IntPtr _JniMarshal_PP_L (IntPtr jnienv, IntPtr klass);
 delegate void _JniMarshal_PP_V (IntPtr jnienv, IntPtr klass);
 delegate bool _JniMarshal_PP_Z (IntPtr jnienv, IntPtr klass);
 delegate void _JniMarshal_PPB_V (IntPtr jnienv, IntPtr klass, sbyte p0);
-delegate void _JniMarshal_PPF_V (IntPtr jnienv, IntPtr klass, float p0);
 delegate int _JniMarshal_PPI_I (IntPtr jnienv, IntPtr klass, int p0);
 delegate void _JniMarshal_PPI_V (IntPtr jnienv, IntPtr klass, int p0);
 delegate IntPtr _JniMarshal_PPIIII_L (IntPtr jnienv, IntPtr klass, int p0, int p1, int p2, int p3);
@@ -60,11 +59,11 @@ delegate IntPtr _JniMarshal_PPLIIL_L (IntPtr jnienv, IntPtr klass, IntPtr p0, in
 delegate IntPtr _JniMarshal_PPLL_L (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1);
 delegate void _JniMarshal_PPLL_V (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1);
 delegate bool _JniMarshal_PPLL_Z (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1);
-delegate void _JniMarshal_PPLLF_V (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1, float p2);
 delegate IntPtr _JniMarshal_PPLLII_L (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1, int p2, int p3);
 delegate IntPtr _JniMarshal_PPLLIIL_L (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1, int p2, int p3, IntPtr p4);
 delegate int _JniMarshal_PPLLL_I (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1, IntPtr p2);
 delegate void _JniMarshal_PPLLL_V (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1, IntPtr p2);
+delegate void _JniMarshal_PPLLLF_V (IntPtr jnienv, IntPtr klass, IntPtr p0, IntPtr p1, IntPtr p2, float p3);
 #if !NET
 namespace System.Runtime.Versioning {
     [System.Diagnostics.Conditional("NEVER")]

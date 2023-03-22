@@ -419,6 +419,22 @@ public class SunmiPrintHelper {
         }
     }
 
+    public void printTableTextCustomFontSize(String[] txts, int[] width, int[] align, float fontSize) {
+        if(sunmiPrinterService == null){
+            //TODO Service disconnection processing
+            return;
+        }
+
+        try {
+            // set font size
+            sunmiPrinterService.setFontSize(fontSize, null);
+            //sunmiPrinterService.printColumnsText(txts, width, align, null);
+            sunmiPrinterService.printColumnsText(txts, width, align, null);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      *  Print pictures and text in the specified orde
      *  After the picture is printed,

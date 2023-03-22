@@ -2936,17 +2936,24 @@
         <parameter name="width" type="int[]" jni-type="[I" />
         <parameter name="align" type="int[]" jni-type="[I" />
       </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="printTableCustomFontSize" jni-signature="([Ljava/lang/String;[I[IF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="txts" type="java.lang.String[]" jni-type="[Ljava/lang/String;" />
+        <parameter name="width" type="int[]" jni-type="[I" />
+        <parameter name="align" type="int[]" jni-type="[I" />
+        <parameter name="fontSize" type="float" jni-type="F" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="printTableTextCustomFontSize" jni-signature="([Ljava/lang/String;[I[IF)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="txts" type="java.lang.String[]" jni-type="[Ljava/lang/String;" />
+        <parameter name="width" type="int[]" jni-type="[I" />
+        <parameter name="align" type="int[]" jni-type="[I" />
+        <parameter name="fontSize" type="float" jni-type="F" />
+      </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="printText" jni-signature="(Ljava/lang/String;FZZLjava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="content" type="java.lang.String" jni-type="Ljava/lang/String;" />
         <parameter name="size" type="float" jni-type="F" />
         <parameter name="isBold" type="boolean" jni-type="Z" />
         <parameter name="isUnderLine" type="boolean" jni-type="Z" />
         <parameter name="typeface" type="java.lang.String" jni-type="Ljava/lang/String;" />
-      </method>
-      <method abstract="false" deprecated="not deprecated" final="false" name="printTextWithFont" jni-signature="(Ljava/lang/String;Ljava/lang/String;F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
-        <parameter name="text" type="java.lang.String" jni-type="Ljava/lang/String;" />
-        <parameter name="typeface" type="java.lang.String" jni-type="Ljava/lang/String;" />
-        <parameter name="fontSize" type="float" jni-type="F" />
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="sendPicToLcd" jni-signature="(Landroid/graphics/Bitmap;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="pic" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
@@ -2958,9 +2965,6 @@
       <method abstract="false" deprecated="not deprecated" final="false" name="sendTextsToLcd" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
       <method abstract="false" deprecated="not deprecated" final="false" name="setAlign" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="align" type="int" jni-type="I" />
-      </method>
-      <method abstract="false" deprecated="not deprecated" final="false" name="setFontSize" jni-signature="(F)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
-        <parameter name="fontSize" type="float" jni-type="F" />
       </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="showPrinterStatus" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" />

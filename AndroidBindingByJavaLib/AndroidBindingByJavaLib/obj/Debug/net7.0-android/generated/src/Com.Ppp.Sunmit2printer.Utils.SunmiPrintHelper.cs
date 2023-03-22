@@ -865,6 +865,124 @@ namespace Com.Ppp.Sunmit2printer.Utils {
 			}
 		}
 
+		static Delegate? cb_printTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIF;
+#pragma warning disable 0169
+		static Delegate GetPrintTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIFHandler ()
+		{
+			if (cb_printTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIF == null)
+				cb_printTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIF = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLLLF_V) n_PrintTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIF);
+			return cb_printTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIF;
+		}
+
+		static void n_PrintTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIF (IntPtr jnienv, IntPtr native__this, IntPtr native_txts, IntPtr native_width, IntPtr native_align, float fontSize)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			var txts = (string[]?) JNIEnv.GetArray (native_txts, JniHandleOwnership.DoNotTransfer, typeof (string));
+			var width = (int[]?) JNIEnv.GetArray (native_width, JniHandleOwnership.DoNotTransfer, typeof (int));
+			var align = (int[]?) JNIEnv.GetArray (native_align, JniHandleOwnership.DoNotTransfer, typeof (int));
+			__this.PrintTableCustomFontSize (txts, width, align, fontSize);
+			if (txts != null)
+				JNIEnv.CopyArray (txts, native_txts);
+			if (width != null)
+				JNIEnv.CopyArray (width, native_width);
+			if (align != null)
+				JNIEnv.CopyArray (align, native_align);
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='printTableCustomFontSize' and count(parameter)=4 and parameter[1][@type='java.lang.String[]'] and parameter[2][@type='int[]'] and parameter[3][@type='int[]'] and parameter[4][@type='float']]"
+		[Register ("printTableCustomFontSize", "([Ljava/lang/String;[I[IF)V", "GetPrintTableCustomFontSize_arrayLjava_lang_String_arrayIarrayIFHandler")]
+		public virtual unsafe void PrintTableCustomFontSize (string[]? txts, int[]? width, int[]? align, float fontSize)
+		{
+			const string __id = "printTableCustomFontSize.([Ljava/lang/String;[I[IF)V";
+			IntPtr native_txts = JNIEnv.NewArray (txts);
+			IntPtr native_width = JNIEnv.NewArray (width);
+			IntPtr native_align = JNIEnv.NewArray (align);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue (native_txts);
+				__args [1] = new JniArgumentValue (native_width);
+				__args [2] = new JniArgumentValue (native_align);
+				__args [3] = new JniArgumentValue (fontSize);
+				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
+			} finally {
+				if (txts != null) {
+					JNIEnv.CopyArray (native_txts, txts);
+					JNIEnv.DeleteLocalRef (native_txts);
+				}
+				if (width != null) {
+					JNIEnv.CopyArray (native_width, width);
+					JNIEnv.DeleteLocalRef (native_width);
+				}
+				if (align != null) {
+					JNIEnv.CopyArray (native_align, align);
+					JNIEnv.DeleteLocalRef (native_align);
+				}
+				global::System.GC.KeepAlive (txts);
+				global::System.GC.KeepAlive (width);
+				global::System.GC.KeepAlive (align);
+			}
+		}
+
+		static Delegate? cb_printTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIF;
+#pragma warning disable 0169
+		static Delegate GetPrintTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIFHandler ()
+		{
+			if (cb_printTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIF == null)
+				cb_printTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIF = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLLLF_V) n_PrintTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIF);
+			return cb_printTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIF;
+		}
+
+		static void n_PrintTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIF (IntPtr jnienv, IntPtr native__this, IntPtr native_txts, IntPtr native_width, IntPtr native_align, float fontSize)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			var txts = (string[]?) JNIEnv.GetArray (native_txts, JniHandleOwnership.DoNotTransfer, typeof (string));
+			var width = (int[]?) JNIEnv.GetArray (native_width, JniHandleOwnership.DoNotTransfer, typeof (int));
+			var align = (int[]?) JNIEnv.GetArray (native_align, JniHandleOwnership.DoNotTransfer, typeof (int));
+			__this.PrintTableTextCustomFontSize (txts, width, align, fontSize);
+			if (txts != null)
+				JNIEnv.CopyArray (txts, native_txts);
+			if (width != null)
+				JNIEnv.CopyArray (width, native_width);
+			if (align != null)
+				JNIEnv.CopyArray (align, native_align);
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='printTableTextCustomFontSize' and count(parameter)=4 and parameter[1][@type='java.lang.String[]'] and parameter[2][@type='int[]'] and parameter[3][@type='int[]'] and parameter[4][@type='float']]"
+		[Register ("printTableTextCustomFontSize", "([Ljava/lang/String;[I[IF)V", "GetPrintTableTextCustomFontSize_arrayLjava_lang_String_arrayIarrayIFHandler")]
+		public virtual unsafe void PrintTableTextCustomFontSize (string[]? txts, int[]? width, int[]? align, float fontSize)
+		{
+			const string __id = "printTableTextCustomFontSize.([Ljava/lang/String;[I[IF)V";
+			IntPtr native_txts = JNIEnv.NewArray (txts);
+			IntPtr native_width = JNIEnv.NewArray (width);
+			IntPtr native_align = JNIEnv.NewArray (align);
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [4];
+				__args [0] = new JniArgumentValue (native_txts);
+				__args [1] = new JniArgumentValue (native_width);
+				__args [2] = new JniArgumentValue (native_align);
+				__args [3] = new JniArgumentValue (fontSize);
+				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
+			} finally {
+				if (txts != null) {
+					JNIEnv.CopyArray (native_txts, txts);
+					JNIEnv.DeleteLocalRef (native_txts);
+				}
+				if (width != null) {
+					JNIEnv.CopyArray (native_width, width);
+					JNIEnv.DeleteLocalRef (native_width);
+				}
+				if (align != null) {
+					JNIEnv.CopyArray (native_align, align);
+					JNIEnv.DeleteLocalRef (native_align);
+				}
+				global::System.GC.KeepAlive (txts);
+				global::System.GC.KeepAlive (width);
+				global::System.GC.KeepAlive (align);
+			}
+		}
+
 		static Delegate? cb_printText_Ljava_lang_String_FZZLjava_lang_String_;
 #pragma warning disable 0169
 		static Delegate GetPrintText_Ljava_lang_String_FZZLjava_lang_String_Handler ()
@@ -900,43 +1018,6 @@ namespace Com.Ppp.Sunmit2printer.Utils {
 				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
 			} finally {
 				JNIEnv.DeleteLocalRef (native_content);
-				JNIEnv.DeleteLocalRef (native_typeface);
-			}
-		}
-
-		static Delegate? cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F;
-#pragma warning disable 0169
-		static Delegate GetPrintTextWithFont_Ljava_lang_String_Ljava_lang_String_FHandler ()
-		{
-			if (cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F == null)
-				cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLLF_V) n_PrintTextWithFont_Ljava_lang_String_Ljava_lang_String_F);
-			return cb_printTextWithFont_Ljava_lang_String_Ljava_lang_String_F;
-		}
-
-		static void n_PrintTextWithFont_Ljava_lang_String_Ljava_lang_String_F (IntPtr jnienv, IntPtr native__this, IntPtr native_text, IntPtr native_typeface, float fontSize)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			var text = JNIEnv.GetString (native_text, JniHandleOwnership.DoNotTransfer);
-			var typeface = JNIEnv.GetString (native_typeface, JniHandleOwnership.DoNotTransfer);
-			__this.PrintTextWithFont (text, typeface, fontSize);
-		}
-#pragma warning restore 0169
-
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='printTextWithFont' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='float']]"
-		[Register ("printTextWithFont", "(Ljava/lang/String;Ljava/lang/String;F)V", "GetPrintTextWithFont_Ljava_lang_String_Ljava_lang_String_FHandler")]
-		public virtual unsafe void PrintTextWithFont (string? text, string? typeface, float fontSize)
-		{
-			const string __id = "printTextWithFont.(Ljava/lang/String;Ljava/lang/String;F)V";
-			IntPtr native_text = JNIEnv.NewString ((string?)text);
-			IntPtr native_typeface = JNIEnv.NewString ((string?)typeface);
-			try {
-				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
-				__args [0] = new JniArgumentValue (native_text);
-				__args [1] = new JniArgumentValue (native_typeface);
-				__args [2] = new JniArgumentValue (fontSize);
-				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
-			} finally {
-				JNIEnv.DeleteLocalRef (native_text);
 				JNIEnv.DeleteLocalRef (native_typeface);
 			}
 		}
@@ -1088,35 +1169,6 @@ namespace Com.Ppp.Sunmit2printer.Utils {
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
 				__args [0] = new JniArgumentValue (align);
-				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
-			} finally {
-			}
-		}
-
-		static Delegate? cb_setFontSize_F;
-#pragma warning disable 0169
-		static Delegate GetSetFontSize_FHandler ()
-		{
-			if (cb_setFontSize_F == null)
-				cb_setFontSize_F = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPF_V) n_SetFontSize_F);
-			return cb_setFontSize_F;
-		}
-
-		static void n_SetFontSize_F (IntPtr jnienv, IntPtr native__this, float fontSize)
-		{
-			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
-			__this.SetFontSize (fontSize);
-		}
-#pragma warning restore 0169
-
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='setFontSize' and count(parameter)=1 and parameter[1][@type='float']]"
-		[Register ("setFontSize", "(F)V", "GetSetFontSize_FHandler")]
-		public virtual unsafe void SetFontSize (float fontSize)
-		{
-			const string __id = "setFontSize.(F)V";
-			try {
-				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
-				__args [0] = new JniArgumentValue (fontSize);
 				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
 			} finally {
 			}
