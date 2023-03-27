@@ -1,0 +1,149 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.ppp.sunmit2vicescreen'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 33
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a'//, 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    // add ignore lib error
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+
+    // vice screen
+
+// https://mvnrepository.com/artifact/com.sunmi/DS_Lib
+
+    //implementation 'org.greenrobot:greendao:3.2.2'
+    implementation files('libs/greendao-3.2.2.jar')
+    // use Library from jar
+    implementation files('libs/DS_Lib-1.0.16.aar-classes.jar')
+
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/fastjson-2.0.26.jar')
+    //implementation 'com.alibaba:fastjson:2.0.26'
+
+    //implementation 'com.sunmi:DS_Lib:1.0.16'
+    //implementation files('libs/gson-2.10.1.jar')
+    //implementation 'com.google.code.gson:gson:2.10.1'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+// Add this into the build.gradle under **root** project.
+// Add the modules that you want to exclude from having this copyXXXJar task.
+def modulesExcluded = [
+        'app',
+        'mastermodulewantedoutput'
+]
+
+subprojects { prj ->
+
+    // Skip excluded modules
+    if (modulesExcluded.contains(prj.name)) {
+        prj.afterEvaluate {
+            tasks['preBuild'].dependsOn(copyModuleJars)
+        }
+        return
+    }
+
+    prj.afterEvaluate {
+
+        /**
+         * Dynamically create task "copyXXXJar" according to build variant of each library module.
+         */
+        android.libraryVariants.all { variant ->
+
+            def capitalizedVariantName = variant.name.capitalize()
+            def variantName = variant.flavorName
+            if (!variantName || variantName == "") {
+                variantName = variant.buildType.name
+            } else {
+                variantName += "-${variant.buildType.name}"
+            }
+            //================================================================================
+            // Define build/copy variant jar and copy to dependencies
+            //================================================================================
+            def copyJarTask = project.tasks.create("copy${capitalizedVariantName}Jar", Copy) {
+                group "Copy Jar"
+                description "Rename the classes.jar to ${project.name}-${variantName}.jar and copy it into dist folder."
+
+
+                def fromDirModule = "$buildDir/outputs/aar/${project.name}-${variantName}.aar"
+                def intoDirModule = "$rootDir/dependencies/$variant.buildType.name"
+                from(zipTree(fromDirModule))
+                into(intoDirModule)
+                include('*.jar')
+                include('libs/*.jar')
+                rename('classes.jar', "${project.name}-${variantName}.jar")
+
+                dependsOn "assemble${capitalizedVariantName}"
+            }
+            copyModuleJars.dependsOn(copyJarTask)
+        }
+    }
+}
+
+// Task to copy all the modules' jars. It can be run with command [ ./gradlew copyModuleJars ]
+task copyModuleJars {
+    group = 'Copy Jar'
+    description = 'Copy the classes.jar from each module.'
+}
+
+task copyBuildDependencies(type: Copy) {
+    delete "$buildDir/dependencies"
+    afterEvaluate {
+        from configurations.releaseCompileClasspath
+        into "$buildDir/dependencies"
+
+        doLast {
+            FileTree files = fileTree("$buildDir/dependencies")
+            files.forEach { file ->
+                if (file.isFile() && file.name.endsWith(".aar")) {
+                    copy {
+                        from zipTree(file).matching { include "*.jar" }
+                        into "$buildDir/dependencies"
+                        eachFile {
+                            it.path = it.path.replace(it.name, "${file.name}-${it.name}")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

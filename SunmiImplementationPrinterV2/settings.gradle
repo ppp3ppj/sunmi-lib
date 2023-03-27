@@ -10,8 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "SunmiImplementationPrinterV2"
 include ':app'
 include ':SunmiT2Printer'
+include ':SunmiT2ViceScreen'
