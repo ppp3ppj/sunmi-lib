@@ -7,5 +7,6 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<None Remove="Additions\SunmiT2Printer-release.aar" />
+		<None Remove="Additions\SunmiT2ViceScreen-release.aar" />
 	</ItemGroup>
 </Project>

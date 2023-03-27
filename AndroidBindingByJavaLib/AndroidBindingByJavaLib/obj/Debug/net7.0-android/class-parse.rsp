@@ -2,3 +2,7 @@
 "obj\Debug\net7.0-android\library_project_jars\SunmiT2Printer-release.aar\classes.jar"
 "obj\Debug\net7.0-android\library_project_jars\SunmiT2Printer-release.aar\libs\core-3.3.0.jar"
 "obj\Debug\net7.0-android\library_project_jars\SunmiT2Printer-release.aar\libs\printerlibrary-1.0.20.aar-classes.jar"
+"obj\Debug\net7.0-android\library_project_jars\SunmiT2ViceScreen-release.aar\classes.jar"
+"obj\Debug\net7.0-android\library_project_jars\SunmiT2ViceScreen-release.aar\libs\DS_Lib-1.0.16.aar-classes.jar"
+"obj\Debug\net7.0-android\library_project_jars\SunmiT2ViceScreen-release.aar\libs\fastjson-2.0.26.jar"
+"obj\Debug\net7.0-android\library_project_jars\SunmiT2ViceScreen-release.aar\libs\greendao-3.2.2.jar"

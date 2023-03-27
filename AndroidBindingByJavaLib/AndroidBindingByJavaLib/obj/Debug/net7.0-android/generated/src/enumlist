@@ -1,3 +1,7 @@
+com.alibaba.fastjson.JSONValidator$Type:Com.Alibaba.Fastjson:JSONValidator.Type
+com.alibaba.fastjson.parser.Feature:Com.Alibaba.Fastjson.Parser:Feature
+com.alibaba.fastjson.PropertyNamingStrategy:Com.Alibaba.Fastjson:PropertyNamingStrategy
+com.alibaba.fastjson.serializer.SerializerFeature:Com.Alibaba.Fastjson.Serializer:SerializerFeature
 com.google.zxing.BarcodeFormat:Com.Google.Zxing:BarcodeFormat
 com.google.zxing.client.result.ParsedResultType:Com.Google.Zxing.Client.Result:ParsedResultType
 com.google.zxing.common.CharacterSetECI:Com.Google.Zxing.Common:CharacterSetECI
@@ -8,3 +12,10 @@ com.google.zxing.pdf417.encoder.Compaction:Com.Google.Zxing.Pdf417.Encoder:Compa
 com.google.zxing.qrcode.decoder.ErrorCorrectionLevel:Com.Google.Zxing.Qrcode.Decoder:ErrorCorrectionLevel
 com.google.zxing.qrcode.decoder.Mode:Com.Google.Zxing.Qrcode.Decoder:Mode
 com.google.zxing.ResultMetadataType:Com.Google.Zxing:ResultMetadataType
+com.ppp.sunmit2vicescreen.utils.CommunicateManager$CommunicateType:Com.Ppp.Sunmit2vicescreen.Utils:CommunicateManager.CommunicateType
+com.ppp.sunmit2vicescreen.utils.DataModel:Com.Ppp.Sunmit2vicescreen.Utils:DataModel
+com.ppp.sunmit2vicescreen.utils_old.DataModel:Com.Ppp.Sunmit2vicescreen.Utils_old:DataModel
+org.greenrobot.greendao.async.AsyncOperation$OperationType:Org.Greenrobot.Greendao.Async:AsyncOperation.OperationType
+org.greenrobot.greendao.identityscope.IdentityScopeType:Org.Greenrobot.Greendao.Identityscope:IdentityScopeType
+sunmi.ds.callback.IConnectionCallback$ConnState:Sunmi.DS.Callback:IConnectionCallback.ConnState
+sunmi.ds.data.DSData$DataType:Sunmi.DS.Data:DSData.DataType

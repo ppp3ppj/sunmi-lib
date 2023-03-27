@@ -27,5 +27,43 @@
   <remove-node path="/api/package[@name='com.google.zxing.oned.rss.expanded.decoders']/class[@name='AbstractExpandedDecoder']/method[@name='getGeneralDecoder' and count(parameter)=0]"/>
   <remove-node path="/api/package[@name='com.google.zxing.client.result']/class[@name='SMSTOMMSTOResultParser']"/>
   <remove-node  path="/api/package[@name='com.google.zxing.client.result']/class[@name='URLTOResultParser']"/>
-	<remove-node  path="/api/package[@name='com.google.zxing.client.result']/class[@name='WifiResultParser']"/>
+  <remove-node  path="/api/package[@name='com.google.zxing.client.result']/class[@name='WifiResultParser']"/>
+
+	<remove-node path="/api/package[@name='com.alibaba.fastjson.util']/class[@name='TypeUtils.MethodInheritanceComparator']" ></remove-node>
+	<remove-node  path="/api/package[@name='com.alibaba.fastjson.util']/class[@name='FieldInfo']"></remove-node>
+	<remove-node  path="/api/package[@name='com.ppp.sunmit2vicescreen.utils']/class[@name='Data']/field[@name='data']"></remove-node>
+	<remove-node  path="/api/package[@name='com.ppp.sunmit2vicescreen.utils_old']/class[@name='Data']/field[@name='data']"></remove-node>
+
+	<remove-node  path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='Query']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Object']]" ></remove-node>
+	<remove-node  path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='Query']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Boolean']]"> </remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='Query']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.util.Date']]"></remove-node>
+	<remove-node  path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='DeleteQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Boolean']]"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='DeleteQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Object']]"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='DeleteQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.util.Date']]"></remove-node>
+	<remove-node  path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='CursorQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Boolean']]" ></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='CursorQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Object']]"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='CursorQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.util.Date']]"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='CountQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Boolean']]"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='CountQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.Object']]"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='CountQuery']/method[@name='setParameter' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.util.Date']]"></remove-node>
+	<remove-node  path="/api/package[@name='org.greenrobot.greendao.query']/class[@name='LazyList']"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.identityscope']/class[@name='IdentityScopeLong']"></remove-node>
+	<remove-node path="/api/package[@name='org.greenrobot.greendao.internal']/class[@name='FastCursor']"></remove-node>
+	<remove-node  path="/api/package[@name='sunmi.ds.gen']/class[@name='DSFilesDao']"></remove-node>
+	<remove-node path="/api/package[@name='sunmi.ds.gen']/class[@name='DSFileDao']"></remove-node>
+	<remove-node path="/api/package[@name='sunmi.ds.gen']/class[@name='DSFileDao']"></remove-node>
+	<remove-node  path="/api/package[@name='sunmi.ds.gen']/class[@name='DaoMaster']"></remove-node>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </metadata>
