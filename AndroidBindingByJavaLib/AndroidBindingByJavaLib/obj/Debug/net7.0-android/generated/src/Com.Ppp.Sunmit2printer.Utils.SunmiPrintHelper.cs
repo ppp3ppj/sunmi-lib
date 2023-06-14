@@ -650,6 +650,70 @@ namespace Com.Ppp.Sunmit2printer.Utils {
 			}
 		}
 
+		static Delegate? cb_printBitmapBlackAndWhite_Landroid_graphics_Bitmap_I;
+#pragma warning disable 0169
+		static Delegate GetPrintBitmapBlackAndWhite_Landroid_graphics_Bitmap_IHandler ()
+		{
+			if (cb_printBitmapBlackAndWhite_Landroid_graphics_Bitmap_I == null)
+				cb_printBitmapBlackAndWhite_Landroid_graphics_Bitmap_I = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLI_V) n_PrintBitmapBlackAndWhite_Landroid_graphics_Bitmap_I);
+			return cb_printBitmapBlackAndWhite_Landroid_graphics_Bitmap_I;
+		}
+
+		static void n_PrintBitmapBlackAndWhite_Landroid_graphics_Bitmap_I (IntPtr jnienv, IntPtr native__this, IntPtr native_bitmap, int orientation)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			var bitmap = global::Java.Lang.Object.GetObject<global::Android.Graphics.Bitmap> (native_bitmap, JniHandleOwnership.DoNotTransfer);
+			__this.PrintBitmapBlackAndWhite (bitmap, orientation);
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='printBitmapBlackAndWhite' and count(parameter)=2 and parameter[1][@type='android.graphics.Bitmap'] and parameter[2][@type='int']]"
+		[Register ("printBitmapBlackAndWhite", "(Landroid/graphics/Bitmap;I)V", "GetPrintBitmapBlackAndWhite_Landroid_graphics_Bitmap_IHandler")]
+		public virtual unsafe void PrintBitmapBlackAndWhite (global::Android.Graphics.Bitmap? bitmap, int orientation)
+		{
+			const string __id = "printBitmapBlackAndWhite.(Landroid/graphics/Bitmap;I)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue ((bitmap == null) ? IntPtr.Zero : ((global::Java.Lang.Object) bitmap).Handle);
+				__args [1] = new JniArgumentValue (orientation);
+				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
+			} finally {
+				global::System.GC.KeepAlive (bitmap);
+			}
+		}
+
+		static Delegate? cb_printBitmapCustomGrayScale_Landroid_graphics_Bitmap_I;
+#pragma warning disable 0169
+		static Delegate GetPrintBitmapCustomGrayScale_Landroid_graphics_Bitmap_IHandler ()
+		{
+			if (cb_printBitmapCustomGrayScale_Landroid_graphics_Bitmap_I == null)
+				cb_printBitmapCustomGrayScale_Landroid_graphics_Bitmap_I = JNINativeWrapper.CreateDelegate ((_JniMarshal_PPLI_V) n_PrintBitmapCustomGrayScale_Landroid_graphics_Bitmap_I);
+			return cb_printBitmapCustomGrayScale_Landroid_graphics_Bitmap_I;
+		}
+
+		static void n_PrintBitmapCustomGrayScale_Landroid_graphics_Bitmap_I (IntPtr jnienv, IntPtr native__this, IntPtr native_bitmap, int orientation)
+		{
+			var __this = global::Java.Lang.Object.GetObject<global::Com.Ppp.Sunmit2printer.Utils.SunmiPrintHelper> (jnienv, native__this, JniHandleOwnership.DoNotTransfer)!;
+			var bitmap = global::Java.Lang.Object.GetObject<global::Android.Graphics.Bitmap> (native_bitmap, JniHandleOwnership.DoNotTransfer);
+			__this.PrintBitmapCustomGrayScale (bitmap, orientation);
+		}
+#pragma warning restore 0169
+
+		// Metadata.xml XPath method reference: path="/api/package[@name='com.ppp.sunmit2printer.utils']/class[@name='SunmiPrintHelper']/method[@name='printBitmapCustomGrayScale' and count(parameter)=2 and parameter[1][@type='android.graphics.Bitmap'] and parameter[2][@type='int']]"
+		[Register ("printBitmapCustomGrayScale", "(Landroid/graphics/Bitmap;I)V", "GetPrintBitmapCustomGrayScale_Landroid_graphics_Bitmap_IHandler")]
+		public virtual unsafe void PrintBitmapCustomGrayScale (global::Android.Graphics.Bitmap? bitmap, int orientation)
+		{
+			const string __id = "printBitmapCustomGrayScale.(Landroid/graphics/Bitmap;I)V";
+			try {
+				JniArgumentValue* __args = stackalloc JniArgumentValue [2];
+				__args [0] = new JniArgumentValue ((bitmap == null) ? IntPtr.Zero : ((global::Java.Lang.Object) bitmap).Handle);
+				__args [1] = new JniArgumentValue (orientation);
+				_members.InstanceMethods.InvokeVirtualVoidMethod (__id, this, __args);
+			} finally {
+				global::System.GC.KeepAlive (bitmap);
+			}
+		}
+
 		static Delegate? cb_printBitmapCustomGrayScaleBase64_Ljava_lang_String_I;
 #pragma warning disable 0169
 		static Delegate GetPrintBitmapCustomGrayScaleBase64_Ljava_lang_String_IHandler ()

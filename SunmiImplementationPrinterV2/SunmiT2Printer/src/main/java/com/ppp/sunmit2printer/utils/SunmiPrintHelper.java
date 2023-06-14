@@ -464,6 +464,39 @@ public class SunmiPrintHelper {
             e.printStackTrace();
         }
     }
+    public void printBitmapBlackAndWhite(Bitmap bitmap, int orientation) {
+        if(sunmiPrinterService == null) {
+            return;
+        }
+        try {
+
+            if(orientation == 0) {
+                sunmiPrinterService.printBitmap(bitmap, null);
+            }
+            else {
+                sunmiPrinterService.printBitmap(bitmap, null);
+            }
+        }catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void printBitmapCustomGrayScale(Bitmap bitmap, int orientation) {
+        if(sunmiPrinterService == null){
+            //TODO Service disconnection processing
+            return;
+        }
+        try {
+            if(orientation == 0) {
+                sunmiPrinterService.printBitmapCustom(bitmap, 2, null);
+            }
+            else {
+                sunmiPrinterService.printBitmapCustom(bitmap, 2, null);
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void printBitmapBase64(String base64String, int orientation) {
         String base64Image = base64String.split(",")[1];

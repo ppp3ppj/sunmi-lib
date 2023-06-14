@@ -23666,6 +23666,52 @@
         abstract="false"
         deprecated="not deprecated"
         final="false"
+        name="printBitmapBlackAndWhite"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Bitmap;I)V">
+        <parameter
+          name="bitmap"
+          type="android.graphics.Bitmap"
+          jni-type="Landroid/graphics/Bitmap;" />
+        <parameter
+          name="orientation"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="printBitmapCustomGrayScale"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Bitmap;I)V">
+        <parameter
+          name="bitmap"
+          type="android.graphics.Bitmap"
+          jni-type="Landroid/graphics/Bitmap;" />
+        <parameter
+          name="orientation"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
         name="printBitmapCustomGrayScaleBase64"
         native="false"
         return="void"

@@ -8,23 +8,23 @@
     "net7.0-android33.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AthiwatKhamnon\\.nuget\\packages\\": {},
+    "C:\\Users\\choerry\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
+      "projectUniqueName": "D:\\Work\\EasyRestaurantSME_DEV_Main\\sunmi-lib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
       "projectName": "AndroidBindingByJavaLib",
-      "projectPath": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
-      "packagesPath": "C:\\Users\\AthiwatKhamnon\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\repos_github_me\\EasyRes_JavaBinding\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\obj\\",
+      "projectPath": "D:\\Work\\EasyRestaurantSME_DEV_Main\\sunmi-lib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib.csproj",
+      "packagesPath": "C:\\Users\\choerry\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\EasyRestaurantSME_DEV_Main\\sunmi-lib\\AndroidBindingByJavaLib\\AndroidBindingByJavaLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\AthiwatKhamnon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\choerry\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34,7 +34,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/v3/index.json": {}
       },
       "frameworks": {
         "net7.0-android33.0": {
@@ -70,7 +71,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

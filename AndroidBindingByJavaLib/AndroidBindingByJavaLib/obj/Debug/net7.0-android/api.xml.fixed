@@ -2914,6 +2914,14 @@
         <parameter name="base64String" type="java.lang.String" jni-type="Ljava/lang/String;" />
         <parameter name="orientation" type="int" jni-type="I" />
       </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="printBitmapBlackAndWhite" jni-signature="(Landroid/graphics/Bitmap;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="orientation" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="printBitmapCustomGrayScale" jni-signature="(Landroid/graphics/Bitmap;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="orientation" type="int" jni-type="I" />
+      </method>
       <method abstract="false" deprecated="not deprecated" final="false" name="printBitmapCustomGrayScaleBase64" jni-signature="(Ljava/lang/String;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
         <parameter name="base64String" type="java.lang.String" jni-type="Ljava/lang/String;" />
         <parameter name="orientation" type="int" jni-type="I" />

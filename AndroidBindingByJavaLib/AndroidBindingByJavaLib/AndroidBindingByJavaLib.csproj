@@ -6,6 +6,6 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Remove="Additions\SunmiT2Printer-release.aar" />
+	  <None Remove="Additions\SunmiT2Printer-release.aar" />
 	</ItemGroup>
 </Project>
