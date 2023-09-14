@@ -20,6 +20,7 @@ import android.util.TypedValue;
 import android.util.Xml;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -39,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
     private SunmiPrintHelper _sunmiPrinterHelper = SunmiPrintHelper.getInstance();
     private Context _mContext;
+
+    private EditText _editTxtPosition;
+    private EditText _editTxtPContent;
+    private Button _btnTestPosition;
+    private EditText _fontSizeSetting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
         SunmiPrintHelper.getInstance().initSunmiPrinterService(_mContext);
         //_sunmiPrinterHelper.initSunmiPrinterService(_mContext);
+        _editTxtPosition = findViewById(R.id.hexPositionTxt);
+        _editTxtPContent = findViewById(R.id.txtContent);
+        _btnTestPosition = findViewById(R.id.buttonTestPrintPosition);
+        _fontSizeSetting = findViewById(R.id.fontSizeTxtI);
 
         Button buttonTestPrint = findViewById(R.id.buttonTestPrint);
         buttonTestPrint.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +67,33 @@ public class MainActivity extends AppCompatActivity {
                 testPrinter();
             }
         });
+
+        _btnTestPosition.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                printPositionT();
+            }
+        });
+    }
+
+    private void printPositionT() {
+
+        _sunmiPrinterHelper.initSunmiPrinterService(_mContext);
+        _sunmiPrinterHelper.initPrinter();
+        int finalVaulePosition = Integer.parseInt(_editTxtPosition.getText().toString());
+        int fontSizeValue = Integer.parseInt(_fontSizeSetting.getText().toString());
+        byte[] sAbPositionRt = {0x1B, 0x24};
+        //byte[] sAbPositionRt = {0x1B, 0x5c};
+
+        byte[] position1st = {(byte) finalVaulePosition, 0x01};
+        byte[] st1 = concateByteArr(sAbPositionRt, position1st);
+        byte[] stLast = {(byte) 0x64, 0x01}; // 100 + 256
+        byte[] st2 = concateByteArr(sAbPositionRt, stLast);
+        _sunmiPrinterHelper.sendRawData(st1);
+        String a = _editTxtPContent.getText().toString();
+        _sunmiPrinterHelper.printText(a + "\n", fontSizeValue, false, false, null);
+        //_sunmiPrinterHelper.printText("120.00" + "\n", 20, false, false, null);
+        _sunmiPrinterHelper.cutpaper();
     }
 
     private void testPrinter() {

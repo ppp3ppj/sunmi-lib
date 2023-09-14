@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayoutMain"
-        android:layout_width="576px"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -24,56 +24,53 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/noto"
-            android:text="ทดสอบ"
-            android:textAlignment="viewEnd"
-            android:textColor="@color/black"
-            android:textSize="20dp"></TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto"
-            android:text="ทดสอบไทย"
-            android:textColor="@color/black"
-            android:textFontWeight="900"
-            android:textSize="34dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto"
-            android:text="สาขา(Branch): T"
-            android:textColor="@color/black"
-            android:textFontWeight="900"
-            android:textSize="18dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto"
-            android:text="สาขา(Branch): T"
+            android:textSize="16dp"
             android:textColor="@color/black"
             android:textFontWeight="300"
-            android:textSize="16dp" />
-
-        <TextView
+            android:text="Font Size.."
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/fontSizeTxtI"
+            android:inputType="number"
+            android:layout_height="wrap_content">
+        </EditText>
+             <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/noto"
-            android:text="ใบกำกับภาษี(ABB): #00001"
-            android:textColor="@color/black"
-            android:textFontWeight="800"
-            android:textSize="16dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto"
-            android:text="ใบกำกับภาษี(ABB): #00001"
+            android:textSize="16dp"
             android:textColor="@color/black"
             android:textFontWeight="300"
-            android:textSize="16dp" />
+            android:text="Position"
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/hexPositionTxt"
+            android:inputType="number"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textFontWeight="300"
+            android:text="Content Test"
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txtContent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonTestPrintPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test Printer Position"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="29dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
