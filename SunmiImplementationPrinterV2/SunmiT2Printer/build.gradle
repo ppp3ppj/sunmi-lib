@@ -33,10 +33,12 @@ dependencies {
 
     // Sunmi Printer Library
     //implementation 'com.sunmi:printerlibrary:1.0.20'
+    //implementation 'com.sunmi:printerlibrary:1.0.22'
     //api 'com.sunmi:printerlibrary:1.0.20'
     //zxing to generate barcode
     implementation files('libs/core-3.3.0.jar')
-    implementation files('libs/printerlibrary-1.0.20.aar-classes.jar')
+    //implementation files('libs/printerlibrary-1.0.20.aar-classes.jar')
+    implementation files('libs/printerlibrary-1.0.22.aar-classes.jar')
 
 
     implementation 'androidx.appcompat:appcompat:1.6.1'

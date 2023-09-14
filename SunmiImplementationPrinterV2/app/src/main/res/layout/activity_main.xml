@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
+        android:layout_width="576px"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonTestPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test Printer"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto"
+            android:text="ทดสอบ"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto"
+            android:text="ทดสอบไทย"
+            android:textColor="@color/black"
+            android:textFontWeight="900"
+            android:textSize="34dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto"
+            android:text="สาขา(Branch): T"
+            android:textColor="@color/black"
+            android:textFontWeight="900"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto"
+            android:text="สาขา(Branch): T"
+            android:textColor="@color/black"
+            android:textFontWeight="300"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto"
+            android:text="ใบกำกับภาษี(ABB): #00001"
+            android:textColor="@color/black"
+            android:textFontWeight="800"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto"
+            android:text="ใบกำกับภาษี(ABB): #00001"
+            android:textColor="@color/black"
+            android:textFontWeight="300"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
